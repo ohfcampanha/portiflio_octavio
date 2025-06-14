@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.site-header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nome-octavio {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-lista {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Regra ÚNICA e CORRETA para estilizar os links do menu.
+  Ela se aplica a todos os elementos com a classe "nav-link".
+*/
+.nav-link {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Efeito extra para quando o mouse passar por cima */
+.nav-link:hover {
+    color: #007bff;
+}
