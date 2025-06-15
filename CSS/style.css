@@ -40,3 +40,72 @@ body {
 .nav-link:hover {
     color: #007bff;
 }
+#home {
+    padding-top: 80px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center;    /* Centraliza os itens horizontalmente */
+    padding-bottom: 80px;
+}
+.titulo-home {
+    text-align: center;
+    margin-bottom: 40px;
+    font: "Source sans Pro", sans-serif;
+
+}
+.paragrafo-principal {
+    text-align: center;
+    margin-bottom: 60px; 
+    font: 20.768px "Source sans Pro", sans-serif;
+}
+.botao-principal {
+    color: white;
+    border-radius: 8px;
+    background-color: #7843E9;
+    border:none;
+    padding: 12px 24px; 
+    font-size: 1rem;
+     cursor: pointer;
+}
+.about-content {
+    display: flex;          /* 1. Ativa o modo Flexbox, colocando os filhos lado a lado */
+    justify-content: space-between; /* 2. Opcional: distribui o espaço entre eles */
+    gap: 40px;              /* 3. Cria um espaço (vão) de 40px ENTRE as colunas */
+}
+
+/* Os FILHOS / COLUNAS */
+.about-text, .about-skills {
+    flex-basis: 50%; /* Define que cada coluna deve tentar ocupar 50% do espaço */
+    /* Outra opção comum é "flex: 1;", que faz as colunas crescerem igualmente */
+}
+
+
+/* Estilos adicionais para os títulos e skills, para se parecer com a imagem */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.about-text h3, .about-skills h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as skills quebrem a linha */
+    gap: 10px;
+}
+
+.skills-container span {
+    background-color: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
